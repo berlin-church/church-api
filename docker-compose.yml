@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    networks:
+      - appnet
+    build:
+      context: ./db
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_PASSWORD: 'localdb'
+networks:
+  appnet:
+    driver: 'bridge'
+volumes:
+  data:
+    driver: 'local'

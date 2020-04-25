@@ -1,0 +1,4 @@
+db:
+  connString: postgresql://postgresdev:postgresdev@localhost:5432/church_api_dev
+api:
+  port: 9000
