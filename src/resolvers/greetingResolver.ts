@@ -9,7 +9,7 @@ class GreetingResolver {
   async greeting(@Arg('to', { nullable: false }) to: string): Promise<Greeting> {
     // Just a query to test the DB
     const pi = await DB.raw('SELECT PI()')
-    return new Greeting(`Hello, ${to}! at ${pi.rows[0].pi}`)
+    return new Greeting(`Hello, ${to}! pi is ${pi.rows[0].pi}`)
   }
 }
 
