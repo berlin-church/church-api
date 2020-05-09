@@ -42,7 +42,7 @@
     "config": "^3.3.1",
     "graphql": "^14.1.1",
     "js-yaml": "^3.13.1",
-    "knex": "^0.21.0",
+    "knex": "^0.21.1",
     "pg": "^8.0.3",
     "reflect-metadata": "^0.1.13",
     "type-graphql": "^0.17.6"
